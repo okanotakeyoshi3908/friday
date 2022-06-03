@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="main-title">サイトをつくるには</h1>
+        <ul class="menu">
+
+            <li class="menu-item">
+                <a href="#html">HTMLについて</a>
+                <ul class="menu-child">
+                    <li class="menu-child-item"><a href="#about-li">ul,ol,liとは</a></li>
+                    <li class="menu-child-item"><a href="#about-dl">dlとは</a></li>
+                    <li class="menu-child-item"><a href="#about-figure">figureとfigcaptionについて</a></li>
+                    <li class="menu-child-item"><a href="#about-em">em, strongとは</a></li>
+                    <li class="menu-child-item"><a href="#about-small">smallとは</a></li>
+                    <li class="menu-child-item"><a href="#about-div">div,spanとは</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <article></article>
+        <h1>サイトを作るには</h1>
+
+        <aeticle id="html">
+            <h2 class="contents-title">HTMLについて</h2>
+            <p class="contents-description">HTMLとはハイパーテキストマークアップランゲージ</p>
+            <p class="contents-description">文章構造を表す言語</p>
+
+            <section class="contents-item" id="about-li">
+                <h3 class="contents-description">ul,ol,liとは</h3>
+                <p class="contents-description">リストを表すためのタグ</p>
+
+                <section class="contents-item-child">
+                    <h4 class="contents-itme-child-title">ulとは</h4>
+                    <p class="contents-itme-child-text">ulは順番がないリスト</p>
+                    <ul>
+                        <li>メニュー</li>
+                        <li>メニュー</li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://twitter.com/@Hyoukikamisaka" target="_blank">twitter</a>
+                        </li>
+                        <li>Instagram</li>
+                    </ul>
+                </section>
+
+                <section class="contents-item-child">
+                    <h4 class="contents-item-child-title">olとは</h4>
+                    <p class="contents-item-chid-text">olは順番付きのリスト</p>
+                    <ol>
+                        <li>ランキング</li>
+                        <li>ランキング</li>
+                        <li>ランキング</li>
+                    </ol>
+                </section>
+            </section>
+
+            <section class="contents-item" id="about-dl">
+                <h3 class="contents-item-title">dlとは</h3>
+                <p class="contents-item-text">定義付きのリスト</p>
+
+                <dl>
+                    <dt>タイトル１</dt>
+                    <dd>タイトル１に対しての説明</dd>
+                    <dt>タイトル２</dt>
+                    <dd>タイトル２対しての説明</dd>
+                    <dd>タイトル２対しての説明</dd>
+                    <dd>タイトル２対しての説明</dd>
+                    <dd>タイトル２対しての説明</dd>
+                </dl>
+
+                <dl>
+                    <dt>ブログコンテンツ</dt>
+                    <dd>記事一覧</dd>
+                    <dt>ダウンロード</dt>
+                    <dd>SNS</dd>
+                    <dd>Twitter</dd>
+                    <dd>Instagram</dd>
+                    <dd>Github</dd>
+                </dl>
+            </section>
+
+            <section class="contents-item" id="about-figure">
+                <h3 class="contents-item-title">figureとfigcaptionについて</h3>
+                <p class="contents-item-text">写真とか図形を表すタグ</p>
+
+                <figure>
+                    <img src="https://www.lisani.jp/admin/wp-content/uploads/2019/06/1906152000-yh-001.jpg" alt="" />
+                    <figcaption>フェリーテイル</figcaption>
+                </figure>
+            </section>
+
+            <section class="contents-item" id="about-em">
+                <h3 class="contents-item-title">em,strongとは</h3>
+                <p class="contents-item-text">文字<em>強調</em>したいときは</p>
+                <p class="contents-item-text">文字が<strong>重要</strong>なときはstrong</p>
+            </section>
+
+            <section class="contents-item" id="about-small">
+                <h3 class="contents-item-title">smallとは</h3>
+                <p class="contents-item-text"><small>&copy; copyright</small></p>
+            </section>
+
+            <section class="contents-item" id="about-div">
+                <h3 class="contents-item-title">div,spanとは</h3>
+                <p class="contents-item-text">特に意味を持たないタグ</p>
+
+                <section class="contents-item-child">
+                    <h4 class="contents-itme-child-title">div</h4>
+                    <p class="contents-item-chid-text">タグにグループ化したいときに使う</p>
+
+                    <div>
+                        <ul>
+                            <li>twitter</li>
+                            <li>youtube</li>
+                        </ul>
+                        <ul>
+                            <li>instagram</li>
+                            <li>note</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="contents-item-child">
+                    <h4 class="contents-itme-child-title">span</h4>
+                    <p class="contents-item-chid-text">divとの違いは改行しないこと。</p>
+                    <p class="contents-item-chid-text"><span>spanも意味がない</span>タグ</p>
+                </section>
+            </section>
+        </aeticle>
+
+        <article>
+            <h2 class="contents-title">cssについて</h2>
+            <p>cssとはカスケーティングスタイルシート</p>
+
+            <section class="contents-title">widtとheihtとpaddingとborderについて</section>
+            <p class="contents-item-itme">横幅はwidth+padding+borderのサイズになる。</p>
+            <p class="contents-itme-itme">ただしstyledでbox-sizing:border-box;をつけると内側につけること</p>
+
+            <p class="box">test</p>
+            <p class="box boxsizing">test</p>
+        </article>
+        </article>
+    </main>
+
+    <footer　class="footer">
+        <p class="copyright"><small>&copy; copright kamisaka.</small></p>
+    </footer>
+</body>
+
+</html>
